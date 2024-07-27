@@ -1,0 +1,192 @@
+/*primera seccion logo y navbar*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0e1ce;
+}
+
+.logo {
+    margin-right: 4;
+    float: left;
+    display: inline-flex;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+    height: 47px;
+    width: 60px;
+    opacity: 10;
+}
+.navbar {
+    display: inline-flexbox;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #0b4d18d3;
+    background-image: url(/imagenes/ninaima\ 5\ -\ copia.jpg);
+    opacity: .9;
+    padding: 8px;
+}
+.navbar li {
+    position: relative;
+    display: inline-flex;
+}
+.navbar li a {
+    display: block;
+    color: rgb(232, 235, 235);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar li  a:hover {
+    background-color: #063918a2;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #1a362be8;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.submenu li {
+    display: block;
+}
+
+.submenu li a {
+    color: rgba(230, 231, 231, 0.937);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.submenu li a:hover {
+    background-color: #8ecfa9;
+}
+.navbar  li:hover .submenu {
+    display: block;
+}
+
+
+/*segunda seccion breve descirpcion*/
+
+.titulo {
+    text-align: center;
+}
+.titulo h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(4, 61, 4);
+}
+.titulo p {
+    color: rgb(4, 34, 4);
+}
+
+
+/*Tercera seccion imagenes o video*/
+section {
+display: flex;
+max-width: 1168px;
+height: 660px;
+margin-top: 50px;
+margin-bottom: 50px;
+
+}
+section img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5 ease;
+}
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+
+
+
+
+/*Cuarta seccion tarjetas*/
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card {
+    background-color: #0b4d18d3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(246, 23, 23, 0.1);
+    width: 200px;
+    text-align: center;
+    opacity: .8;
+}
+
+/*quinta seccion  footer*/
+footer {
+    background-color: #0b4d18d3;
+    color: #fff;
+    padding: 10 px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #2e0cb6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
